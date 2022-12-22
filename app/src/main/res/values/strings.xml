@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">The CS Advisor 9000</string>
+    <string name="help">You need a total of 90 credits to graduate: 75 from required courses and 15 from electives.\n\nVisit your student profile, located in the "3-dot menu" to see how many credits you\'ve taken so far.\n\nAll electives are shown in blue.\n\nFor assistance, email your Administrator:\nadmin@student.edu.\nAdditionally, you may email SaveTheStudentsLLC@gmail.com for technical support.\n\nThis app was developed by Save The Students LLC.\n\nCurrent version: CS Advisor 9000 v1.3</string>
+</resources>

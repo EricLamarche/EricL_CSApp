@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "653205827432",
+    "project_id": "ericl-csapp1",
+    "storage_bucket": "ericl-csapp1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653205827432:android:536ac622c0049ca2ec70dd",
+        "android_client_info": {
+          "package_name": "com.app.ericl_csapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653205827432-t062eol495o6rfrghe32cgahr8ujkcso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlVPo7eqr-cB_qGEN0MtXURklrS4A9TBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653205827432-t062eol495o6rfrghe32cgahr8ujkcso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

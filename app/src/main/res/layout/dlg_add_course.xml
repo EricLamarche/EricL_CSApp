@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="35dp">
+
+    <TextView
+        android:id="@+id/lblCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:text="Course Name:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCourseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lblCourseName"
+        app:layout_constraintTop_toBottomOf="@+id/lblCourseName" />
+
+    <TextView
+        android:id="@+id/lblCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Number of Credits:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCourseName" />
+
+    <EditText
+        android:id="@+id/edtCredits"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="3"
+        app:layout_constraintStart_toStartOf="@+id/lblCredits"
+        app:layout_constraintTop_toBottomOf="@+id/lblCredits" />
+
+    <TextView
+        android:id="@+id/lblYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:text="Year:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnDlgCourseSemesters" />
+
+    <TextView
+        android:id="@+id/lblSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Semester:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtCredits"
+        app:layout_constraintTop_toBottomOf="@+id/edtCredits" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/lblYear"
+        app:layout_constraintTop_toBottomOf="@+id/lblYear" />
+
+    <Button
+        android:id="@+id/btnDlgCourseAddCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkElective" />
+
+    <ImageButton
+        android:id="@+id/btnDlgCourseClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <Spinner
+        android:id="@+id/spnDlgCourseSemesters"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/lblCredits"
+        app:layout_constraintStart_toStartOf="@+id/edtCredits"
+        app:layout_constraintTop_toBottomOf="@+id/lblSemester" />
+
+    <CheckBox
+        android:id="@+id/chkElective"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Elective"
+        app:layout_constraintEnd_toEndOf="@+id/edtYear"
+        app:layout_constraintStart_toStartOf="@+id/edtYear"
+        app:layout_constraintTop_toBottomOf="@+id/edtYear" />
+</androidx.constraintlayout.widget.ConstraintLayout>
